@@ -1,0 +1,60 @@
+body {
+	background-image: url("../resources/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0px;
+	padding: 0px;
+}
+
+.padding {
+	padding: 1% 0 1% 0;
+}
+
+/*grades pages*/
+.card {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	height: 100%
+}
+
+.topic {
+	padding: 2% 0 1% 0;
+	font-size: 2.5rem;
+	text-shadow: rgb(0,0,0);
+}
+
+.table{
+	text-align: center;
+}
+
+.table th {
+	font-weight: bold;
+}
+
+.table .subject-title {
+	text-align: left;
+}
+
+.table .subject-grade {
+	width: 18px;
+}
+
+.table .grade-input {
+	text-align: center;
+}
+
+.btn {
+	width: 150px;
+	background-color: #EE3030;
+	color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.align-middle {
+	margin-top: 20%;
+}
+
+.gpa-rows {
+	width: 50%;
+}
