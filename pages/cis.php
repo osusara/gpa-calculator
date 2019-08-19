@@ -254,7 +254,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
-	<title>GPA Calculator</title>
+	<title>CIS | Applied Sciences</title>
 </head>
 <body>
 	<div class="topic text-center">
@@ -565,7 +565,7 @@
         									<td><?php echo $e311; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e311">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS312XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS31234">Software Engineering</option>
         											<option value="IS31235">Data Communication and Networks</option>
         											<option value="IS31236">Geographical Information Systems</option>
@@ -584,7 +584,7 @@
         									<td><?php echo $e312; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e312">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS312XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS31234">Software Engineering</option>
         											<option value="IS31235">Data Communication and Networks</option>
         											<option value="IS31236">Geographical Information Systems</option>
@@ -603,7 +603,7 @@
         									<td><?php echo $e313; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e313">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS312XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS31234">Software Engineering</option>
         											<option value="IS31235">Data Communication and Networks</option>
         											<option value="IS31236">Geographical Information Systems</option>
@@ -622,7 +622,7 @@
         									<td><?php echo $e314; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e314">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS312XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS31234">Software Engineering</option>
         											<option value="IS31235">Data Communication and Networks</option>
         											<option value="IS31236">Geographical Information Systems</option>
@@ -641,7 +641,7 @@
         									<td><?php echo $e315; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e315">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS312XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS31234">Software Engineering</option>
         											<option value="IS31235">Data Communication and Networks</option>
         											<option value="IS31236">Geographical Information Systems</option>
@@ -735,7 +735,7 @@
         									<td><?php echo $e411; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e411">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS412XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS41248">Cloud Computing</option>
         											<option value="IS41249">Logistics Systems and Transportation Management</option>
         											<option value="IS41250">Human Resource Management</option>
@@ -751,7 +751,7 @@
         									<td><?php echo $e412; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e412">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS412XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS41248">Cloud Computing</option>
         											<option value="IS41249">Logistics Systems and Transportation Management</option>
         											<option value="IS41250">Human Resource Management</option>
@@ -767,7 +767,7 @@
         									<td><?php echo $e413; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e413">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS412XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS41248">Cloud Computing</option>
         											<option value="IS41249">Logistics Systems and Transportation Management</option>
         											<option value="IS41250">Human Resource Management</option>
@@ -832,7 +832,7 @@
         									<td><?php echo $e421; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e421">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS422XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS42258">Enterprise Architecture Framework</option>
         											<option value="IS42259">Web Service Technologies</option>
         											<option value="IS42260">Software Architecture</option>
@@ -848,7 +848,7 @@
         									<td><?php echo $e422; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e422">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS422XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS42258">Enterprise Architecture Framework</option>
         											<option value="IS42259">Web Service Technologies</option>
         											<option value="IS42260">Software Architecture</option>
@@ -864,7 +864,7 @@
         									<td><?php echo $e423; ?></td>
         									<td class="subject-title">
         										<select class="form-control form-control-sm" name="e423">
-        											<option selected disabled hidden>Select The Elective Subject</option>
+        											<option value="IS422XX" selected hidden>Select The Elective Subject</option>
         											<option value="IS42258">Enterprise Architecture Framework</option>
         											<option value="IS42259">Web Service Technologies</option>
         											<option value="IS42260">Software Architecture</option>

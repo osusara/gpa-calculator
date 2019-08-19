@@ -3,10 +3,13 @@
 
 <?php 
 
+	$errors = array();
+
 	$gpa1 = 0;
 	$gpa2 = 0;
 	$gpa3 = 0;
 	$gpa4 = 0;
+	$div = 0;
 	$fgpa = 0;
 
 	if(isset($_SESSION['gpa1']) || isset($_SESSION['gpa2']) || isset($_SESSION['gpa3']) || isset($_SESSION['gpa4'])){
@@ -20,7 +23,16 @@
 		$gpa3 = $_SESSION['gpa3'];
 		$gpa4 = $_SESSION['gpa4'];
 
-		$fgpa = round((($gpa1*$c1*0.2 + $gpa2*$c2*0.2 + $gpa3*$c3*0.3 + $gpa4*$c3*0.3)/($c1*0.2 + $c2*0.2 + $c3*0.3 + $c3*0.3)),4);
+		$div = $c1*0.2 + $c2*0.2 + $c3*0.3 + $c3*0.3;
+
+		if($div > 0){
+			$fgpa = round((($gpa1*$c1*0.2 + $gpa2*$c2*0.2 + $gpa3*$c3*0.3 + $gpa4*$c3*0.3)/$div),4);
+		}else{
+			$errors[] = 'Final GPA calculation error! (division by 0)<br> Make sure that you add the grades correctly';
+		}
+
+	}else{
+		$errors[] = 'There is a problem in one of your GPAs';
 	}
 
 	if(isset($_POST['return'])){
@@ -52,15 +64,27 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
-	<title>GPA Calculator</title>
+	<title>Your GPAs</title>
 </head>
 <body>
+
+	<div class="container-fluid">
+ 		
+    </div>
 
 	<div class="container-fluid">
 		<div class="row  align-middle">
 			<div class="col-md-4 col-sm-8 col-xs-10 mx-auto">
 				<div class="card">
 					<div class="card-body text-center">
+						<?php
+ 							// Display errors
+ 							if(isset($errors) && !empty($errors)){
+ 								echo '<div class="alert alert-danger" role="alert">';
+ 								echo '<p class="error">'.$errors[0].'</p>';
+ 								echo '</div>';
+ 			 				}
+   						?>
 						<div class="topic">
 							<strong><?php echo $fgpa; ?></strong>
 						</div>

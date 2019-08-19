@@ -1,8 +1,11 @@
 body {
 	background-image: url("../resources/background.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  	height: 100vh;
 	margin: 0px;
 	padding: 0px;
 }
