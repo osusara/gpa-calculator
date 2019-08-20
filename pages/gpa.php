@@ -117,7 +117,9 @@
 		
 
 		<div class="container padding text-center">
-			<a class="btn btn-lg" href="../index.php" name="return">Return</a>
+			<form action="gpa.php" method='post'>
+				<input class="btn btn-lg" type="submit" name="return" value="Return">
+			</form>
 		</div>
 	</div>
 

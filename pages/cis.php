@@ -154,7 +154,7 @@
 			$IS22225 = grade($_POST['IS22225'])*2;
 			$IS22226 = grade($_POST['IS22226'])*2;
 
-			//total credits erned in first year
+			//total credits erned in second year
 			$c2 = $IS21213+$IS21214+$IS21215+$IS21216+$IS21217+$IS21218+$IS21219+$IS22220+$IS22221+$IS22222+$IS22223+$IS22224+$IS22225+$IS22226;
 
 			//gpa for the second year
@@ -183,7 +183,7 @@
 			//3,2 grades
 			$IS32842 = grade($_POST['IS32842'])*8;
 
-			//total credits erned in first year
+			//total credits erned in third year
 			$c3 = $IS31227+$IS31228+$IS31129+$IS31230+$IS31231+$IS31232+$IS31233+$IS312e1+$IS312e2+$IS312e3+$IS312e4+$IS312e5+$IS32842;
 
 			//gpa for the third year
@@ -217,7 +217,7 @@
 			$e422 = $_POST['e422'];
 			$e423 = $_POST['e423'];
 
-			//total credits erned in first year
+			//total credits erned in forth year
 			$c4 = $IS41243+$IS41244+$IS41245+$IS41246+$IS41247+$IS412e1+$IS412e2+$IS412e3+$IS42853+$IS42254+$IS42255+$IS42256+$IS42257+$IS422e1+$IS422e2+$IS422e3;
 
 			//gpa for the forth year
@@ -887,6 +887,7 @@
 
 			<div class="container padding text-center">
 				<input id="0" class="btn btn-lg" type="submit" name="submit" value="Go">
+				<a class="btn btn-back btn-lg" href="app.php">Back</a>
 			</div>
 		</form>
 	</div>

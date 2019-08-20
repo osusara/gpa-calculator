@@ -27,6 +27,17 @@ body {
 	text-shadow: rgb(0,0,0);
 }
 
+.main-select::-ms-expand {
+    display: none;
+}
+
+.main-select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	border-radius: 10rem;
+	text-align-last: center;
+}
+
 .table{
 	text-align: center;
 }
@@ -49,9 +60,20 @@ body {
 
 .btn {
 	width: 150px;
+	margin: 0 4px;
 	background-color: #EE3030;
 	color: #FFFFFF;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container .btn-back {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.btn:hover {
+	background-color: #FFD363;
+	color: #000000;
 }
 
 .align-middle {

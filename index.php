@@ -22,7 +22,7 @@
 						<div class="topic">
 							<strong>GPA Calculator</strong>
 						</div>
-						<h6>Click Next begin</h6>
+						<h6>Click Next to begin</h6>
 					</div>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 		
 
 		<div class="container padding text-center">
-			<a class="btn btn-lg" href="pages/cis.php">Next</a>
+			<a class="btn btn-lg" href="pages/app.php">Next</a>
 		</div>
 	</div>
 
