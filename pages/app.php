@@ -16,7 +16,7 @@
 					break;
 
 				case 'nr':
-					header('Location: ../index.php');
+					header('Location: nr.php');
 					break;
 
 				case 'pst':
@@ -49,6 +49,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="shortcut icon" href="../fav.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -74,7 +75,7 @@
 									<option selected disabled hidden>Choose your department</option>
 									<option value="cis">Computing and Information Systems</option>
 									<option value="fst">Food Sciences and Technology</option>
-									<option value="nr" disabled>Natural Resources</option>
+									<option value="nr">Natural Resources</option>
 									<option value="pst" disabled>Physical Sciences and Technology</option>
 									<option value="pe" disabled>Physical Education</option>
 									<option value="sm" disabled>Sport Management</option>

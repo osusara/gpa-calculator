@@ -1,6 +1,5 @@
 <?php session_start() ?>
 <?php require_once("../includes/functions.php"); ?>
-
 <?php 
 
 	$errors = array();
@@ -13,6 +12,7 @@
 	$fgpa = 0;
 
 	if(isset($_SESSION['gpa1']) || isset($_SESSION['gpa2']) || isset($_SESSION['gpa3']) || isset($_SESSION['gpa4'])){
+
 		$c1 = $_SESSION['c1'];
 		$c2 = $_SESSION['c2'];
 		$c3 = $_SESSION['c3'];
@@ -23,13 +23,28 @@
 		$gpa3 = $_SESSION['gpa3'];
 		$gpa4 = $_SESSION['gpa4'];
 
-		$div = $c1*0.2 + $c2*0.2 + $c3*0.3 + $c3*0.3;
+		if($c4 > 0){
 
-		if($div > 0){
-			$fgpa = round((($gpa1*$c1*0.2 + $gpa2*$c2*0.2 + $gpa3*$c3*0.3 + $gpa4*$c3*0.3)/$div),4);
-		}else{
-			$errors[] = 'Final GPA calculation error! (division by 0)<br> Make sure that you add the grades correctly';
+			$div = $c1*0.2 + $c2*0.2 + $c3*0.3 + $c4*0.3;
+
+			if($div > 0){
+				$fgpa = round((($gpa1*$c1*0.2 + $gpa2*$c2*0.2 + $gpa3*$c3*0.3 + $gpa4*$c4*0.3)/$div),4);
+			}else{
+				$errors[] = 'Final GPA calculation error! (division by 0)<br> Make sure that you add the grades correctly';
+			}
+			
+		} else if($c4 == 0){
+
+			$div = $c1*0.3 + $c2*0.3 + $c3*0.4;
+
+			if($div > 0){
+				$fgpa = round((($gpa1*$c1*0.3 + $gpa2*$c2*0.3 + $gpa3*$c3*0.4)/$div),4);
+			}else{
+				$errors[] = 'Final GPA calculation error! (division by 0)<br> Make sure that you add the grades correctly';
+			}
 		}
+
+		
 
 	}else{
 		$errors[] = 'There is a problem in one of your GPAs';
@@ -59,6 +74,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="shortcut icon" href="../fav.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">

@@ -256,6 +256,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="shortcut icon" href="../fav.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -270,7 +271,7 @@
 
 	<div class="container-fluid">
  		<?php
- 			// DFSTplay errors
+ 			// Display errors
  			if(isset($errors) && !empty($errors)){
  				echo '<div class="alert alert-danger" role="alert">';
  				echo '<p class="error">'.$errors[0].'</p>';
