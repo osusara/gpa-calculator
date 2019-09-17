@@ -100,17 +100,17 @@
 	//when the submit
 	if(isset($_POST['submit'])){
 
-		if(!isset($_POST['e311']) || !isset($_POST['e312']) || !isset($_POST['e313']) || !isset($_POST['e314']) || !isset($_POST['e315'])){
-			$errors[] = 'Please select your elective subjects or NOT YET! in 3rd year';
-		}
+		// if(!isset($_POST['e311']) || !isset($_POST['e312']) || !isset($_POST['e313']) || !isset($_POST['e314']) || !isset($_POST['e315'])){
+		// 	$errors[] = 'Please select your elective subjects or NOT YET! in 3rd year';
+		// }
 
-		if(!isset($_POST['e411']) || !isset($_POST['e412']) || !isset($_POST['e413'])){
-			$errors[] = 'Please select your elective subjects or NOT YET! in 4th year 1st semester';
-		}
+		// if(!isset($_POST['e411']) || !isset($_POST['e412']) || !isset($_POST['e413'])){
+		// 	$errors[] = 'Please select your elective subjects or NOT YET! in 4th year 1st semester';
+		// }
 
-		if(!isset($_POST['e421']) || !isset($_POST['e422']) || !isset($_POST['e423'])){
-			$errors[] = 'Please select your elective subjects or NOT YET! in 4th year 1st semester';
-		}
+		// if(!isset($_POST['e421']) || !isset($_POST['e422']) || !isset($_POST['e423'])){
+		// 	$errors[] = 'Please select your elective subjects or NOT YET! in 4th year 1st semester';
+		// }
 
 		if(empty($errors)){
 

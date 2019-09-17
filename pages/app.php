@@ -77,8 +77,8 @@
 									<option value="fst">Food Sciences and Technology</option>
 									<option value="nr">Natural Resources</option>
 									<option value="pst" disabled>Physical Sciences and Technology</option>
-									<option value="pe" disabled>Physical Education</option>
-									<option value="sm" disabled>Sport Management</option>
+									<option value="pe">Physical Education</option>
+									<option value="sm" disabled>Sport Sciences and Management</option>
 								</select>
 								<?php
  									// Display errors

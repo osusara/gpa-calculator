@@ -109,9 +109,9 @@
 	//when the submit
 	if(isset($_POST['submit'])){
 
-		if(!isset($_POST['e411']) || !isset($_POST['e412'])){
-			$errors[] = 'Please select your elective subjects or NOT YET! in 4th year 1st semester';
-		}
+		// if(!isset($_POST['e411']) || !isset($_POST['e412'])){
+		// 	$errors[] = 'Please select your elective subjects or NOT YET! in 4th year 1st semester';
+		// }
 
 		if(empty($errors)){
 

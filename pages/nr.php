@@ -113,17 +113,17 @@
 	//when the submit
 	if(isset($_POST['submit'])){
 
-		if(!isset($_POST['e321']) || !isset($_POST['e322']) || !isset($_POST['e323'])){
-			$errors[] = 'Please select your elective subjects or NOT YET! in 3rd year 2nd semester';
-		}
+		// if(!isset($_POST['e321']) || !isset($_POST['e322']) || !isset($_POST['e323'])){
+		// 	$errors[] = 'Please select your elective subjects or NOT YET! in 3rd year 2nd semester';
+		// }
 
-		if(!isset($_POST['e411']) || !isset($_POST['e412']) || !isset($_POST['e413'])){
-			$errors[] = 'Please select your elective subjects or NOT YET! in 4th year 1st semester';
-		}
+		// if(!isset($_POST['e411']) || !isset($_POST['e412']) || !isset($_POST['e413'])){
+		// 	$errors[] = 'Please select your elective subjects or NOT YET! in 4th year 1st semester';
+		// }
 
-		if(!isset($_POST['degree'])){
-			$errors[] = 'Please select whether you are doing a general or special degree';
-		}
+		// if(!isset($_POST['degree'])){
+		// 	$errors[] = 'Please select whether you are doing a general or special degree';
+		// }
 
 		if(empty($errors)){
 
@@ -294,7 +294,7 @@
 
 	<title>NR | Applied Sciences</title>
 </head>
-<body onload="load()">
+<body>
 	<div class="topic text-center">
 		<strong>Fill Your Grades</strong>
 	</div>
@@ -619,7 +619,7 @@
 									</div>
 									<h6>Degree is a</h6>
 									<div class="container">
-										<select class="form-control main-select" name="degree" id="degree" onchange="degreeSelect()">
+										<select class="form-control main-select" name="degree" id="degree" onchange="">
 											<option selected disabled hidden>Select whether general or special</option>
 											<option value="general">3 years GENERAL degree</option>
 											<option value="special">4 years SPECIAL degree</option>
@@ -637,7 +637,7 @@
 					</div>
 				</div>
 
-				<div id="general" class="row padding" hidden>
+				<div class="general special row padding">
 					<div class="col-md-6 col-sm-12 mx-auto margin">
 							<div class="card">
 								<div class="card-body">
@@ -874,7 +874,7 @@
 					</div>
 				</div>
 
-				<div id="special" class="row padding" hidden>
+				<div class="special row padding">
 					<div class="col-md-6 col-sm-12 mx-auto margin">
 							<div class="card ">
 								<div class="card-body">
@@ -935,10 +935,10 @@
         											<option value="ESNRM41210">Ground Water Exploration</option>
         											<option value="ESNRM41211">Applied Hydrology</option>
         											<option value="ESNRM41212">Climatology and Meteorology</option>
-        											<option value="ESNRM4141213">Protected Area Management</option>
+        											<option value="ESNRM41413">Protected Area Management</option>
         											<option value="ESNRM41214">Eco Tourism</option>
         											<option value="ESNRM41215">Oil Exploration</option>
-        											<option value="ESNRM4141216">Biogeography and Conservation Planning</option>
+        											<option value="ESNRM41416">Biogeography and Conservation Planning</option>
         											<option value="ESNRM41217">Forestry for Rural Development</option>
         											<option value="ESNRM41218">Environment and Society</option>
         											<option value="ESNRM412XX">NOT DECIDED YET!</option>
@@ -1036,52 +1036,34 @@
 		</form>
 	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 
-		function degreeSelect() {
-  			let general = document.getElementsByClassName('general');
-  			let special = document.getElementsByClassName('special');
+		$(document).ready(function(){
 
-			let specialId = document.getElementById("special");
-			let generalId = document.getElementById("general");
+			$('.general').hide();
+			$('.special').hide();
 
-  			let degree = document.getElementById("degree").value;
+			$('#degree').change(function(){
 
-  			if(degree === 'general'){
+				var val = $('#degree').val();
 
-  				generalId.hidden = false;
-  				specialId.hidden = true;
-
-  				for(i = 0; i < special.length; i++) {
-    				special[i].hidden = true;
-  				}
-
-  				for(i = 0; i < general.length; i++) {
-    				general[i].hidden = false;
-  				}
-
-  			}else if(degree === 'special') {
-
-  				generalId.hidden = false;
-  				specialId.hidden = false;
-
-  				for(i = 0; i < general.length; i++) {
-    				general[i].hidden = true;
-  				}
-
-  				for(i = 0; i < special.length; i++) {
-    				special[i].hidden = false;
-  				}
-
-  			}else {
-
-  				generalId.hidden = true;
-  				specialId.hidden = true;
-
-  			}
-		}
+				if(val === 'general'){
+					
+					$('.special').hide();
+					$('.general').show();
+				}else if(val === 'special'){
+					$('.general').hide();
+					$('.special').show();
+				}else {
+					$('.general').hide();
+					$('.special').hide();
+				}
+			});
+		});
 
 	</script>
+
 	<script type="text/javascript" src="../js/functions.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
